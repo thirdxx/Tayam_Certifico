@@ -122,7 +122,7 @@ a {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #1cb5c9, #66e929);
 }
 .nav__logo {
   color: var(--second-color);
@@ -140,7 +140,7 @@ a {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #1b7ceb, #19db70);
 }
 
 .show {

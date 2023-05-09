@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   --header-height: 3rem;
@@ -11,7 +11,7 @@
 }
 
 :root {
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Roboto", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -152,7 +152,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #1cb5c9, #66e929);
 }
 .nav__logo {
   color: var(--second-color);
@@ -170,7 +170,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #1b7ceb, #19db70);
 }
 
 .show {
@@ -186,12 +186,17 @@ img {
 }
 .home__title {
   font-size: 70px;
+  font-weight: 500;
   margin-top: 150px;
   margin-bottom: 30px;
   padding-bottom: 0%;
 }
 .home__title-color {
-  color: var(--first-color);
+  background: linear-gradient(to right, rgb(16, 192, 25), rgb(15, 96, 202));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
 }
 .home__social {
   display: flex;

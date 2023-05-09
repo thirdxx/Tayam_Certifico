@@ -123,7 +123,7 @@ a {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #1cb5c9, #66e929);
 }
 .nav__logo {
   color: var(--second-color);
@@ -141,7 +141,7 @@ a {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-image: linear-gradient(to right, #1b7ceb, #19db70);
 }
 
 .show {
@@ -230,10 +230,10 @@ h2 {
 
 #avatar {
   display: inline;
-  height: 300px;
-  width: 550px;
+  height: 340px;
+  width: 610px;
   margin-left: 10px;
-  margin-top: 135px;
+  margin-top: 100px;
 }
 
 #bio {
@@ -290,8 +290,8 @@ h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 0;
-  margin-bottom: 10px;
-  padding-top: 110px;
+  margin-bottom: 0px;
+  padding-top: 10px;
 }
 
 .ptext {
