@@ -1,6 +1,6 @@
 <?php
 
-require "autoload.php";
+// require "autoload.php";
 
 $uri = $_SERVER["REQUEST_URI"];
 
