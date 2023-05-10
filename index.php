@@ -1,27 +1,27 @@
 <?php
 
-// require "autoload.php";
-
 $uri = $_SERVER["REQUEST_URI"];
 
+$base = "/Tayam_Certifico/";
+
 switch ($uri) {
-    case "/":
+    case $base:
         $title = "Home";
         require "views/home.php";
         break;
-    case "/about":
+    case $base . "about":
         $title = "About";
         require "views/about.php";
         break;
-    case "/services":
+    case $base . "services":
         $title = "Services";
         require "views/services.php";
         break;
-    case "/works":
+    case $base . "works":
         $title = "Works";
         require "views/works.php";
         break;
-    case "/contact":
+    case $base . "contact":
         $title = "Contact";
         require "views/contact.php";
         break;
@@ -31,4 +31,5 @@ switch ($uri) {
         break;
 }
 
-// require "views/index.php";
+// $title = "Home";
+// require "views/home.php";
