@@ -11,7 +11,7 @@ require "partials/header.php";
 <div id="card">
   <h1>Services</h1>
   <div class="image-crop">
-    <img id="avatar" src="../img/diogenespic.png" alt="Diogenes Tayam"></img>
+    <img id="avatar" src="./resources/img/diogenespic.png" alt="Diogenes Tayam"></img>
   </div>
   <div id="bio">
     <div id="texts">
@@ -29,7 +29,7 @@ require "partials/header.php";
       </p>
       </p>
       <div id="buttons">
-        <button onclick="location.href = 'works.html';" class="button1">My works</button>
+        <button onclick="location.href = './works';" class="button1">My works</button>
       </div>
     </div>
   </div>
@@ -37,14 +37,14 @@ require "partials/header.php";
 <div id="card2">
   <h2>Services</h2>
   <div class="image-crop2">
-    <img id="avatar" src="../img/jeddypic.png" alt="Jeddy Certifico"></img>
+    <img id="avatar" src="./resources/img/jeddypic.png" alt="Jeddy Certifico"></img>
   </div>
   <div id="bio">
     <p class="text2">Web Development<br>
       I am a sufficient in various programming languages such as JavaScript, PHP, HTML, CSS, and also I am knowledgable in C, Python, and Java prhramming languages.<br><br>
     </p>
     <div id="buttons">
-      <button onclick="location.href = 'works.html';" class="button2">My works</button>
+      <button onclick="location.href = './works';" class="button2">My works</button>
     </div>
   </div>
 </div>

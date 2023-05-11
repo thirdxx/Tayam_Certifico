@@ -12,7 +12,7 @@ require "partials/header.php";
   <div id="card">
     <h1>Personal Information</h1>
     <div class="image-crop">
-      <img id="avatar" src="../img/diogenespic.png" alt="diogenes profile pic"></img>
+      <img id="avatar" src="./resources/img/diogenespic.png" alt="diogenes profile pic"></img>
     </div>
     <div id="bio">
       <div id="texts">

@@ -15,22 +15,22 @@ require "partials/header.php";
 
     <div class="work__container bd-grid">
       <div class="work__img">
-        <img src="../img/pic1.jpg" alt="" />
+        <img src="./resources/img/pic1.jpg" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/pic7.jpeg" alt="" />
+        <img src="./resources/img/pic7.jpeg" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/pic8.jpeg" alt="" />
+        <img src="./resources/img/pic8.jpeg" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/pic10.jpg" alt="" />
+        <img src="./resources/img/pic10.jpg" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/pic9.jpeg" alt="" />
+        <img src="./resources/img/pic9.jpeg" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/pic11.jpg" alt="" />
+        <img src="./resources/img/pic11.jpg" alt="" />
       </div>
     </div>
   </section>
@@ -39,26 +39,26 @@ require "partials/header.php";
 
     <div class="work__container bd-grid">
       <div class="work__img">
-        <img src="../img/jed1.png" alt="" />
+        <img src="./resources/img/jed1.png" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/jed2.png" alt="" />
+        <img src="./resources/img/jed2.png" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/jed3.png" alt="" />
+        <img src="./resources/img/jed3.png" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/jed5.png" alt="" />
+        <img src="./resources/img/jed5.png" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/jed6.png" alt="" />
+        <img src="./resources/img/jed6.png" alt="" />
       </div>
       <div class="work__img">
-        <img src="../img/jeddyc.png" alt="" />
+        <img src="./resources/img/jeddyc.png" alt="" />
       </div>
     </div>
     <div id="buttons">
-      <button onclick="location.href = 'services.html';" class="button1">Back</button>
+      <button onclick="location.href = './services';" class="button1">Back</button>
     </div>
   </section>
 </main>

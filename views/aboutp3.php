@@ -14,7 +14,7 @@ require "partials/header.php";
   <div id="card">
     <h1>Personal Information</h1>
     <div class="image-crop">
-      <img id="avatar" src="../img/jeddypic.png" alt="jeddy profile pic"></img>
+      <img id="avatar" src="./resources/img/jeddypic.png" alt="jeddy profile pic"></img>
     </div>
     <div id="bio">
       <div id="texts">

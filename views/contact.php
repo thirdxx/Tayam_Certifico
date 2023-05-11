@@ -10,7 +10,7 @@ require "partials/header.php";
 
 
 <div class="image-crop">
-  <img class="img-fluid" id="avatar" src="../img/contactus2.png" alt="contactus img">
+  <img class="img-fluid" id="avatar" src="./resources/img/contactus2.png" alt="contactus img">
 </div>
 <div class="card-container">
   <div id="card">
