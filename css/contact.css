@@ -477,19 +477,23 @@ form div .input {
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding: 10px;
 }
 .footer__title {
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 .footer__social {
-  margin-bottom: var(--mb-4);
+  margin-bottom: 10px;
 }
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2);
+}
+.copyright {
+  font-weight: 100;
 }
 
 @media screen and (min-width: 768px) {
