@@ -463,7 +463,7 @@ h2 {
   .home__data {
     align-self: flex-end;
   }
-
+}
 @media screen and (min-width: 1024px) {
   .bd-grid {
     margin-left: auto;

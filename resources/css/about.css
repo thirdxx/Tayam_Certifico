@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -581,11 +580,10 @@ h3 {
   }
 
   .about__container,
-  
   .about__img img {
     width: 300px;
   }
-  
+}
 
 @media screen and (min-width: 1024px) {
   .bd-grid {

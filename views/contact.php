@@ -23,7 +23,7 @@ require "partials/header.php";
   <div id="card_j">
     <h2>Get in touch <br> with me</h2>
     <div id="bio2">
-      <p class="text2">Phone#: 09392839288<br><br>Email:<br>jeddycolon.certifico@bicol-u.edu.ph</p>
+      <p class="text2">Phone#: 09319830206<br><br>Email:<br>jeddycolon.certifico@bicol-u.edu.ph</p>
     </div>
     <div>
     </div>
