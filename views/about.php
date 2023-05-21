@@ -20,7 +20,7 @@ require "partials/header.php";
       <p class="text">Hello, my name is Diogenes! I am a Photographer, Photo and Video Editor, and I am sufficient in layouting, HTML & CSS. I make everyone's dream into reality. </p><br>
 
       <div id="buttons">
-        <button onclick="location.href = './about-diogenes';" class="button1">Discover</button>
+        <button onclick="location.href = './about-diogenes'" class="button1">Discover</button>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ require "partials/header.php";
       <p class="text2">Hello, my name is Jeddy! I am sufficient in programming languages such as Java, Python, C, C++, HTML/CSS, JavaScript and more. I make solutions that works best.</p><br>
 
       <div id="buttons">
-        <button onclick="location.href = './about-jeddy';" class="button2">Discover</button>
+        <button onclick="location.href = './about-jeddy'" class="button2">Discover</button>
       </div>
     </div>
   </div>
