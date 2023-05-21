@@ -30,6 +30,3 @@ switch ($uri) {
         require "views/404.php";
         break;
 }
-
-// $title = "Home";
-// require "views/home.php";
