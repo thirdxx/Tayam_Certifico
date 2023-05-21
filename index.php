@@ -13,6 +13,14 @@ switch ($uri) {
         $title = "About";
         require "views/about.php";
         break;
+    case $base . "about-diogenes":
+        $title = "About";
+        require "views/aboutp2.php";
+        break;
+    case $base . "about-jeddy":
+        $title = "About";
+        require "views/aboutp3.php";
+        break;
     case $base . "services":
         $title = "Services";
         require "views/services.php";
