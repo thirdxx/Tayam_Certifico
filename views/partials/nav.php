@@ -21,7 +21,7 @@
                 <a href="./contact" class="nav__link">Contact</a>
             </li>
             <i class="nav__item">
-                <i style="font-size:20px" class="fa fa-sign-out"></i>
+                <i style="font-size:20px" class="nav__link fa fa-sign-out"></i>
             </i>
         </ul>
     </div>
