@@ -1,5 +1,5 @@
 <?php
-$css = "styles.css";
+$css = "services.css";
 require "partials/header.php";
 ?>
 

@@ -22,6 +22,9 @@ require "partials/header.php";
                     Explore now
                 </button>
             </div>
+            <div class="home__img">
+                <img src="./resources/img/homepic1.png" alt="profile" />
+            </div>
         </div>
     </section>
 </main>
