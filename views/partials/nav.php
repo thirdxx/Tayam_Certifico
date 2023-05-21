@@ -20,7 +20,9 @@
             <li class="nav__item">
                 <a href="./contact" class="nav__link">Contact</a>
             </li>
-            <i style="font-size:24px" class="fa">&#xf08b;</i>
+            <i class="nav__item">
+                <i style="font-size:20px" class="fa fa-sign-out"></i>
+            </i>
         </ul>
     </div>
 
