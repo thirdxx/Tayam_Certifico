@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 require "resources/db/db_conn.php";
@@ -17,7 +16,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     $pass = validate($_POST['password']);
 
     if (empty($uname)) {
-        header("Location: ./login?error=User Name is required");
+        header("Location: ./login?error=Username is required");
         exit();
     } else if (empty($pass)) {
         header("Location: ./login?error=Password is required");
@@ -36,11 +35,11 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 header("Location: ./");
                 exit();
             } else {
-                header("Location: ./login?error=Incorect User name or password");
+                header("Location: ./login?error=Incorect Username or password");
                 exit();
             }
         } else {
-            header("Location: ./login?error=Incorect User name or password");
+            header("Location: ./login?error=Incorect Username or password");
             exit();
         }
     }
