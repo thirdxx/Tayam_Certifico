@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "resources/db/db_conn.php";
+require "db/db_conn.php";
 
 if (isset($_POST['uname']) && isset($_POST['password'])) {
 

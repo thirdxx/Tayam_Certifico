@@ -1,49 +1,60 @@
 <?php
-
-require "function.php";
-
+// get the current page
 $uri = $_SERVER["REQUEST_URI"];
-
+// get the path
 $uri = parse_url($uri, PHP_URL_PATH);
-
-// dd($uri);
-
-
+// get the base
 $base = "/Tayam_Certifico/";
 
-switch ($uri) {
-    case $base:
-        $title = "Home";
-        require "views/home.php";
-        break;
-    case $base . "login":
-        $title = "Login";
-        require "views/login.php";
-        break;
-    case $base . "login_script.php":
-        require "views/login_script.php";
-        break;
-    case $base . "logout.php":
-        require "views/logout.php";
-        break;
-    case $base . "about":
-        $title = "About";
-        require "views/about.php";
-        break;
-    case $base . "services":
-        $title = "Services";
-        require "views/services.php";
-        break;
-    case $base . "works":
-        $title = "Works";
-        require "views/works.php";
-        break;
-    case $base . "contact":
-        $title = "Contact";
-        require "views/contact.php";
-        break;
-    default:
-        $title = "404";
-        require "views/404.php";
-        break;
+$routes = [
+    $base => [
+        "title" => "Home",
+        "view" => "home.php"
+    ],
+    $base . "login" => [
+        "title" => "Login",
+        "view" => "login.php"
+    ],
+    $base . "login_script.php" => [
+        "view" => "partials/login_script.php"
+    ],
+    $base . "signup" => [
+        "title" => "Signup",
+        "view" => "signup.php"
+    ],
+    $base . "signup_script.php" => [
+        "view" => "partials/signup_script.php"
+    ],
+    $base . "logout.php" => [
+        "view" => "partials/logout.php"
+    ],
+
+    $base . "about" => [
+        "title" => "About",
+        "view" => "about.php"
+    ],
+    $base . "services" => [
+        "title" => "Services",
+        "view" => "services.php"
+    ],
+    $base . "works" => [
+        "title" => "Works",
+        "view" => "works.php"
+    ],
+    $base . "contact" => [
+        "title" => "Contact",
+        "view" => "contact.php"
+    ]
+];
+
+if (array_key_exists($uri, $routes)) {
+    $route = $routes[$uri];
+    if (array_key_exists("title", $route)) {
+        $title = $route["title"];
+    }
+    require "views/" . $route["view"];
+} else {
+    http_response_code(404);
+    $title = "404";
+    require "views/404.php";
 }

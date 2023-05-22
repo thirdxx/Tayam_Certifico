@@ -1,27 +1,27 @@
 <nav class="nav bd-grid">
     <div>
-        <a href="./" class="nav__logo">Portfolio</a>
+        <a href="./" class="nav__logo text-decoration-none">Portfolio</a>
     </div>
 
     <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="./" class="nav__link">Home</a>
+                <a href="./" class="nav__link text-decoration-none ">Home</a>
             </li>
             <li class="nav__item">
-                <a href="./about" class="nav__link">About</a>
+                <a href="./about" class="nav__link text-decoration-none">About</a>
             </li>
             <li class="nav__item">
-                <a href="./services" class="nav__link">Services</a>
+                <a href="./services" class="nav__link text-decoration-none ">Services</a>
             </li>
             <li class="nav__item">
-                <a href="./works" class="nav__link">Work</a>
+                <a href="./works" class="nav__link text-decoration-none">Work</a>
             </li>
             <li class="nav__item">
-                <a href="./contact" class="nav__link">Contact</a>
+                <a href="./contact" class="nav__link text-decoration-none  ">Contact</a>
             </li>
             <i class="nav__item">
-                <i style="font-size:20px" class="nav__link fa fa-sign-out" onclick="location.href='logout.php'"></i>
+                <i style="font-size:20px" class="nav__link text-decoration-none fa fa-sign-out" onclick="location.href='logout.php'"></i>
             </i>
         </ul>
     </div>
@@ -31,19 +31,4 @@
     </div>
 </nav>
 
-<script>
-    $(document).ready(() => {
-        const activePage = window.location.pathname;
-        const navLinks = $('.nav__link').toArray();
-
-        if (activePage === '/Tayam_Certifico/') {
-            $(navLinks[0]).addClass('active');
-        } else {
-            navLinks.forEach((link) => {
-                if (link.href.includes(activePage)) {
-                    $(link).addClass('active');
-                }
-            });
-        }
-    });
-</script>
+<script src="./resources/js/script.js"></script>
