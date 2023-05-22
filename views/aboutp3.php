@@ -1,5 +1,5 @@
 <?php
-$css = "about3.css";
+$css = "aboutp3.css";
 require "partials/header.php";
 ?>
 
@@ -108,7 +108,7 @@ require "partials/header.php";
       </div>
       </button>
       <div id="buttons">
-        <button onclick="location.href = 'about.html';" class="button2">Back</button>
+        <button onclick="location.href = './about';" class="button2">Back</button>
       </div>
     </div>
   </div>

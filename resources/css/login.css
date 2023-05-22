@@ -1,0 +1,126 @@
+body {
+  background-image: url("../img/bg.jpg");
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  opacity: 200;
+  width: 350px;
+  height: 450px;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+.circle {
+  border-radius: 50%;
+  background-color: #dde0e6;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: -40px;
+  height: 100px;
+  width: 100px;
+}
+
+.circle i {
+  font-size: 80px;
+  border-radius: 35%;
+  color: #2f5597;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.log {
+  color: #200863;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 0;
+}
+
+.usern {
+  line-height: 16px;
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  margin-bottom: 27px;
+  font-family: Arial, sans-serif;
+}
+
+form.f1 {
+  padding-top: 5px;
+  opacity: 500;
+}
+
+.pass {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  margin-bottom: 27px;
+  font-family: Arial, sans-serif;
+}
+
+.un:focus,
+.pass:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.send {
+  cursor: pointer;
+  border-radius: 1em;
+  color: #fff;
+  background: #2f5597;
+  border: 0;
+  place-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: Arial, sans-serif;
+  margin-left: 35%;
+  font-size: 15px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 600px) {
+  .main {
+    border-radius: 0px;
+  }
+}
+
+.error {
+  background: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  margin: 20px auto;
+}

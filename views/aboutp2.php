@@ -107,7 +107,7 @@ require "partials/header.php";
       </div>
     </div>
     <div id="buttons">
-      <button onclick="location.href = 'about.html';" class="button1">Back</button>
+      <button onclick="location.href = './about';" class="button1">Back</button>
     </div>
   </div>
 </div>
