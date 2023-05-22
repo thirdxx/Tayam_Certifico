@@ -11,7 +11,8 @@ require "partials/header.php";
   <div class="circle">
     <i class="fas fa-user"></i>
   </div>
-  <p class="log" align="center">User Login</p>
+  <p class="log" align="center">Login</p>
+  <p class="mt-5 text-center ">New Here? <a href="./signup" class="text-decoration-none">Create an account</a>.</p>
   <form class="form" action="./login_script.php" method="post">
     <?php
     $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
