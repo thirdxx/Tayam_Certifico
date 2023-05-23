@@ -33,6 +33,14 @@ $routes = [
         "title" => "About",
         "view" => "about.php"
     ],
+    $base . "about-diogenes" => [
+        "title" => "About Diogenes",
+        "view" => "aboutp2.php"
+    ],
+    $base . "about-jeddy" => [
+        "title" => "About Jeddy",
+        "view" => "aboutp3.php"
+    ],
     $base . "services" => [
         "title" => "Services",
         "view" => "services.php"
