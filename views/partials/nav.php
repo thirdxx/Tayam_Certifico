@@ -1,4 +1,13 @@
 <style>
+    .nav__link:hover {
+        position: relative;
+        background-image: linear-gradient(to right, rgb(74, 74, 207), #3de73d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #fff;
+    }
+
     .dropdown-menu {
         display: none;
         position: absolute;
