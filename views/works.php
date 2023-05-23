@@ -41,23 +41,23 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       <h3 class="section-title2">Jeddy Certifico</h3>
 
       <div class="work__container bd-grid">
-        <div class="work__img">
+        <div class="work__img ratio ratio-16x9">
           <img src="./resources/img/jed1.png" alt="" />
         </div>
-        <div class="work__img">
+        <div class="work__img ratio ratio-16x9">
           <img src="./resources/img/jed2.png" alt="" />
         </div>
-        <div class="work__img">
+        <div class="work__img ratio ratio-16x9">
           <img src="./resources/img/jed3.png" alt="" />
         </div>
-        <div class="work__img">
+        <div class="work__img ratio ratio-16x9">
           <img src="./resources/img/jed5.png" alt="" />
         </div>
-        <div class="work__img">
+        <div class="work__img ratio ratio-16x9">
           <img src="./resources/img/jed6.png" alt="" />
         </div>
-        <div class="work__img">
-          <img src="./resources/img/jeddyc.png" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/chat-app.png" alt="" />
         </div>
       </div>
       <div id="buttons">
@@ -65,8 +65,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       </div>
     </section>
   </main>
-
   <?php require "partials/footer.php"; ?>
+
 
 <?php
 } else {

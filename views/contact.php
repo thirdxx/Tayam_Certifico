@@ -5,7 +5,6 @@ require "partials/header.php";
 
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 ?>
-
   <!-- HEADER -->
   <header class="l-header">
     <?php require "partials/nav.php"; ?>
@@ -37,24 +36,48 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <p class="log">Let's <span>talk</span></p><br>
   </li>
   <p class="ptext">We would love to hear from you.</p>
-  <form class="f1">
+  <form class="f1" method="post" action="./send_email.php">
     <div>
       <div class="input">
-        <input class="name" type="text" placeholder="Name" />
-        <input class="email" type="email" placeholder="Email" />
-        <input class="message" type="text" placeholder="Message" />
+        <input required name="name" class="name text-capitalize" type="text" placeholder="Name" value="<?php echo $_SESSION['user_name'] ?>" />
+        <input required name="email" class="email" type="email" placeholder="Email" value="<?php echo $_SESSION['user_email'] ?>" />
+        <input required name="message" class="message" type="text" placeholder="Message" />
+      </div>
+      <div id="buttons">
+        <button type="submit" class="sendbutton" alt="send button">Send</button>
       </div>
 
-      <div id="buttons">
-        <button class="sendbutton" alt="send button">Send</button>
-      </div>
+      <?php $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+      parse_str($query, $params);
+      if (isset($params['success'])) { ?>
+        <script>
+          $(document).ready(function() {
+            $(".modal").modal("show");
+          });
+        </script>
+      <?php } ?>
     </div>
   </form>
   </div>
   </div>
-  </main>
 
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Hello <span class="text-capitalize"><?php echo $_SESSION['user_name'] ?></span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Thank you for contacting us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
   <?php require "partials/footer.php"; ?>
+
 
 <?php
 } else {
