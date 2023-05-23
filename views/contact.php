@@ -39,8 +39,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   <form class="f1" method="post" action="./send_email.php">
     <div>
       <div class="input">
-        <input required name="name" class="name" type="text" placeholder="Name" value="" />
-        <input required name="email" class="email" type="email" placeholder="Email" value="" />
+        <input required name="name" class="name text-capitalize" type="text" placeholder="Name" value="<?php echo $_SESSION['user_name'] ?>" />
+        <input required name="email" class="email" type="email" placeholder="Email" value="<?php echo $_SESSION['user_email'] ?>" />
         <input required name="message" class="message" type="text" placeholder="Message" />
       </div>
       <div id="buttons">
@@ -50,29 +50,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       <?php $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
       parse_str($query, $params);
       if (isset($params['success'])) { ?>
-        <p class="success"><?php echo $params['success']; ?></p>
-        <div class="modal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>Modal body text goes here.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <script>
           $(document).ready(function() {
-            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-            myModal.show();
+            $(".modal").modal("show");
           });
         </script>
       <?php } ?>
@@ -80,6 +60,21 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   </form>
   </div>
   </div>
+
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Hello <span class="text-capitalize"><?php echo $_SESSION['user_name'] ?></span></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Thank you for contacting us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </main>
   <?php require "partials/footer.php"; ?>
 
