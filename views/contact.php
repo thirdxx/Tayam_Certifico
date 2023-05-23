@@ -43,10 +43,39 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         <input required name="email" class="email" type="email" placeholder="Email" value="" />
         <input required name="message" class="message" type="text" placeholder="Message" />
       </div>
-
       <div id="buttons">
         <button type="submit" class="sendbutton" alt="send button">Send</button>
       </div>
+
+      <?php $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+      parse_str($query, $params);
+      if (isset($params['success'])) { ?>
+        <p class="success"><?php echo $params['success']; ?></p>
+        <div class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          $(document).ready(function() {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+          });
+        </script>
+      <?php } ?>
     </div>
   </form>
   </div>

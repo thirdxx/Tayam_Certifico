@@ -40,8 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Send the email
         $mail->send();
-        echo 'Email sent successfully!';
+        // echo 'Email sent successfully!';
+        header("Location: ./contact?success=Your message has been sent successfully");
     } catch (Exception $e) {
-        echo 'Email could not be sent. Error: ', $mail->ErrorInfo;
+        // echo 'Email could not be sent. Error: ', $mail->ErrorInfo;
+        header("Location: ./contact?error=Email could not be sent.");
     }
 }
