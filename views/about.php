@@ -1,4 +1,5 @@
 <?php
+session_start();
 $css = "about.css";
 require "partials/header.php";
 

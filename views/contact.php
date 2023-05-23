@@ -1,4 +1,5 @@
 <?php
+session_start();
 $css = "contact.css";
 require "partials/header.php";
 
