@@ -52,6 +52,9 @@ $routes = [
     $base . "contact" => [
         "title" => "Contact",
         "view" => "contact.php"
+    ],
+    $base . "send_email.php" => [
+        "view" => "partials/send_email.php"
     ]
 ];
 

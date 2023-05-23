@@ -1,8 +1,8 @@
 <?php
+session_start();
 $css = "contact.css";
 require "partials/header.php";
 ?>
-
 <!-- HEADER -->
 <header class="l-header">
   <?php require "partials/nav.php"; ?>
@@ -34,16 +34,16 @@ require "partials/header.php";
   <p class="log">Let's <span>talk</span></p><br>
 </li>
 <p class="ptext">We would love to hear from you.</p>
-<form class="f1">
+<form class="f1" method="post" action="./send_email.php">
   <div>
     <div class="input">
-      <input class="name" type="text" placeholder="Name" />
-      <input class="email" type="email" placeholder="Email" />
-      <input class="message" type="text" placeholder="Message" />
+      <input required name="name" class="name" type="text" placeholder="Name" value="" />
+      <input required name="email" class="email" type="email" placeholder="Email" value="" />
+      <input required name="message" class="message" type="text" placeholder="Message" />
     </div>
 
     <div id="buttons">
-      <button class="sendbutton" alt="send button">Send</button>
+      <button type="submit" class="sendbutton" alt="send button">Send</button>
     </div>
   </div>
 </form>
