@@ -38,7 +38,7 @@
 </style>
 <nav class="nav bd-grid">
     <div>
-        <a href="./" class="nav__logo text-decoration-none">Portfolio</a>
+        <a href="./" class="nav__logo text-decoration-none">DJ Portfolio</a>
     </div>
 
     <div class="nav__menu" id="nav-menu">
