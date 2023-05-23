@@ -145,9 +145,7 @@ img {
   position: relative;
   color: #fff;
 }
-.nav__link:hover {
-  position: relative;
-}
+
 .nav__link:hover::after {
   position: absolute;
   content: "";
