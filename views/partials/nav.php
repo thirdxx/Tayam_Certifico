@@ -106,9 +106,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 <li class="nav__item">
                     <a href="./about" class="nav__link text-decoration-none">About</a>
                 </li>
-                <i class="nav__item">
+                <li class="nav__item">
                     <a href="./login" class="nav__link text-decoration-none">Sign in</a>
-                </i>
+                </li>
             </ul>
         </div>
 
