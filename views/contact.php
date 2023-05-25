@@ -44,6 +44,22 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <p class="log">Let's talk</p><br>
   </li>
   <p class="ptext">We would love to hear from you.</p>
+  <style>
+    .error {
+      background: #f2dede;
+      color: #a94442;
+      padding: 10px;
+      width: 34%;
+      border-radius: 5px;
+      margin: 20px auto;
+    }
+  </style>
+  <?php
+  $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
+  parse_str($query, $params);
+  if (isset($params['error'])) { ?>
+    <p class="error"><?php echo $params['error']; ?></p>
+  <?php } ?>
   <form class="f1" method="post" action="./send_email.php">
     <div>
       <div class="input">
@@ -54,7 +70,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       <div id="buttons">
         <button type="submit" class="sendbutton" alt="send button">Send</button>
       </div>
-
       <?php $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);
       parse_str($query, $params);
       if (isset($params['success'])) { ?>

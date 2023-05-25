@@ -44,6 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: ./contact?success");
     } catch (Exception $e) {
         // echo 'Email could not be sent. Error: ', $mail->ErrorInfo;
-        header("Location: ./contact?error=Email could not be sent.");
+        header("Location: ./contact?error=Email could not be sent. Please use valid email.");
     }
 }
