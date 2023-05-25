@@ -17,23 +17,23 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       <h2 class="section-title">Diogenes Tayam</h2>
 
       <div class="work__container bd-grid">
-        <div class="work__img">
-          <img src="./resources/img/pic1.jpg" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/mvd.png" alt="" />
         </div>
-        <div class="work__img">
-          <img src="./resources/img/pic7.jpeg" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/ddinventory.png" alt="" />
         </div>
-        <div class="work__img">
-          <img src="./resources/img/pic8.jpeg" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/chatapp.png" alt="" />
         </div>
-        <div class="work__img">
-          <img src="./resources/img/pic10.jpg" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/jed1.png" alt="" />
         </div>
-        <div class="work__img">
-          <img src="./resources/img/pic9.jpeg" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/tark.png" alt="" />
         </div>
-        <div class="work__img">
-          <img src="./resources/img/pic11.jpg" alt="" />
+        <div class="work__img ratio ratio-16x9">
+          <img src="./resources/img/calculator.png" alt="" />
         </div>
       </div>
     </section>
