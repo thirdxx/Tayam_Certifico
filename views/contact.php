@@ -22,6 +22,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       </div>
       <div class="footer__social">
         <a href="https://www.facebook.com/bunso.tayam" class="footer__icon"><i class="bx bxl-facebook" style="font-size: 30px; background-color:gray; border-radius: 50px; margin-left:10px"></i></a>
+        <a href="https://github.com/thirdxx" class="footer__icon"><i class="bx bxl-github" style="font-size: 30px; background-color:gray; border-radius: 50px; margin-right: 10px"></i></a>
       </div>
     </div>
 
@@ -32,6 +33,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       </div>
       <div class="footer__social"><br>
         <a href="https://www.facebook.com/jeddy.certifico.WDS" class="footer__icon"><i class="bx bxl-facebook" style="font-size: 30px; background-color:gray; border-radius: 50px;float: right; margin-right: 30px; margin-top: 10px;"></i></a>
+        <a href="https://github.com/JeddyCertifico" class="footer__icon"><i class="bx bxl-github" style="font-size: 30px; background-color:gray; border-radius: 50px; float: right; margin-right: 30px; margin-top: 10px;"></i></a>
       </div>
       <div>
       </div>
@@ -39,7 +41,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   </div>
 
   <li class="form__item">
-    <p class="log">Let's <span>talk</span></p><br>
+    <p class="log">Let's talk</p><br>
   </li>
   <p class="ptext">We would love to hear from you.</p>
   <form class="f1" method="post" action="./send_email.php">

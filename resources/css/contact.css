@@ -285,11 +285,12 @@ h2 {
 }
 
 .log {
-  color: #1f4e79;
+  background-image: linear-gradient(to right, rgb(19, 19, 126), #186b18);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 40px;
-  line-height: 0;
   margin-bottom: 0px;
   padding-top: 10px;
 }
