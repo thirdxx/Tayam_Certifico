@@ -26,7 +26,7 @@ require "partials/header.php";
             <p class="error"><?php echo $params['error']; ?></p>
         <?php } ?>
         <input required class="usern mb-3" type="text" align="center" placeholder="Username" name="uname" />
-        <input required class="usern mb-3" type="email" align="center" placeholder="email" name="uemail" />
+        <input required class="usern mb-3" type="email" align="center" placeholder="Email" name="uemail" />
         <input required class="pass mb-3" type="password" align="center" placeholder="Password" name="password" />
         <input required class="pass" type="password" align="center" placeholder="Confirm Password" name="confirmpassword" />
         <button class="send" name="submit" type="submit" align="center">Sign up</button>
