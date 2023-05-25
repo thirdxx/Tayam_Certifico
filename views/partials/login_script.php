@@ -24,22 +24,26 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     } else {
         $sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
 
-        $result = mysqli_query($conn, $sql);
-
-        if (mysqli_num_rows($result) === 1) {
-            $row = mysqli_fetch_assoc($result);
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-                $_SESSION['user_name'] = $row['user_name'];
-                $_SESSION['user_email'] = $row['user_email'];
-                $_SESSION['id'] = $row['id'];
-                header("Location: ./");
-                exit();
+        try {
+            $result = $conn->query($sql);
+            if ($result->num_rows === 1) {
+                $row = $result->fetch_assoc();
+                if ($row['user_name'] === $uname && $row['password'] === $pass) {
+                    $_SESSION['user_name'] = $row['user_name'];
+                    $_SESSION['user_email'] = $row['user_email'];
+                    $_SESSION['id'] = $row['id'];
+                    header("Location: ./");
+                    exit();
+                } else {
+                    header("Location: ./login?error=Incorect username or password");
+                    exit();
+                }
             } else {
-                header("Location: ./login?error=Incorect Username or password");
+                header("Location: ./login?error=Incorect username or password");
                 exit();
             }
-        } else {
-            header("Location: ./login?error=Incorect Username or password");
+        } catch (Exception $e) {
+            header("Location: ./login?error=Incorect username or password");
             exit();
         }
     }
