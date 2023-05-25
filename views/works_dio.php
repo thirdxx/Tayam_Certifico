@@ -36,29 +36,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
           <img src="./resources/img/calculator.png" alt="" />
         </div>
       </div>
-    </section>
-    <section class="work section" id="work">
-      <h3 class="section-title2">Jeddy Certifico</h3>
-
-      <div class="work__container bd-grid">
-        <div class="work__img ratio ratio-16x9">
-          <img src="./resources/img/jed1.png" alt="" />
-        </div>
-        <div class="work__img ratio ratio-16x9">
-          <img src="./resources/img/jed2.png" alt="" />
-        </div>
-        <div class="work__img ratio ratio-16x9">
-          <img src="./resources/img/jed3.png" alt="" />
-        </div>
-        <div class="work__img ratio ratio-16x9">
-          <img src="./resources/img/jed5.png" alt="" />
-        </div>
-        <div class="work__img ratio ratio-16x9">
-          <img src="./resources/img/jed6.png" alt="" />
-        </div>
-        <div class="work__img ratio ratio-16x9">
-          <img src="./resources/img/chat-app.png" alt="" />
-        </div>
+      <div id="buttons">
+        <button onclick="location.href = './services';" class="button1">Back</button>
       </div>
     </section>
   </main>

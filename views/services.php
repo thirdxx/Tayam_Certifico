@@ -32,7 +32,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         </p>
         </p>
         <div id="buttons">
-          <button onclick="location.href = './works';" class="button1">My works</button>
+          <button onclick="location.href = './works-diogenes';" class="button1">My works</button>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         I am a sufficient in various programming languages such as JavaScript, PHP, HTML, CSS, and also I am knowledgable in C, Python, and Java prhramming languages.<br><br>
       </p>
       <div id="buttons">
-        <button onclick="location.href = './works';" class="button2">My works</button>
+        <button onclick="location.href = './works-jeddy';" class="button2">My works</button>
       </div>
     </div>
   </div>
