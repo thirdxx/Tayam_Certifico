@@ -12,7 +12,7 @@ require "partials/header.php";
     <i class="fas fa-user"></i>
   </div>
   <p class="log" align="center">Login</p>
-  <p class="mt-5 text-center ">New Here? <a href="./signup" class="text-decoration-none">Create an account</a>.</p>
+  <p class="mt-5 text-center ">New here? <a href="./signup" class="text-decoration-none">Create an account</a>.</p>
   <form class="form" action="./login_script.php" method="post">
     <?php
     $query = parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY);

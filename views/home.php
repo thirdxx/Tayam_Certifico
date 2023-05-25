@@ -2,40 +2,31 @@
 session_start();
 $css = "styles.css";
 require "partials/header.php";
-
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 ?>
+<!-- HEADER -->
+<header class="l-header">
+    <?php require "partials/nav.php"; ?>
+</header>
 
-    <!-- HEADER -->
-    <header class="l-header">
-        <?php require "partials/nav.php"; ?>
-    </header>
-
-    <main class="l-main">
-        <!--HOME-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">
-                    Explore our skills<br />
-                    and know everything<br />
-                    <span class="home__title-color">about us</span><br />
-                </h1>
-                <div class="button-container">
-                    <button onclick="location.href = './about'" class="button">
-                        Explore now
-                    </button>
-                </div>
-                <div class="home__img">
-                    <img src="./resources/img/homepic1.png" alt="profile" />
-                </div>
+<main class="l-main">
+    <!--HOME-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">
+                Explore our skills<br />
+                and know everything<br />
+                <span class="home__title-color">about us</span><br />
+            </h1>
+            <div class="button-container">
+                <button onclick="location.href = './about'" class="button">
+                    Explore now
+                </button>
             </div>
-        </section>
-    </main>
+            <div class="home__img">
+                <img src="./resources/img/homepic1.png" alt="profile" />
+            </div>
+        </div>
+    </section>
+</main>
 
-    <?php require "partials/footer.php"; ?>
-<?php
-} else {
-    header("Location: ./login");
-    exit();
-}
-?>
+<?php require "partials/footer.php"; ?>
