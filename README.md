@@ -2,6 +2,6 @@
 
 # Diogenes Tayam
 
-# Certifico Jeddy
+# Jeddy Certifico
 
 # https://youtu.be/TC4ewSndmJQ
